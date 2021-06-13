@@ -1,2 +1,9 @@
 # FRACTUS2D
 Numerical and Experimental Evaluation of Fracture Mechanics Parameters
+
+FRACTUS2D, a research code written in Fortran F77 and F90 to determine several key fracture mechanics parameters used in typical fracture mechanics applications for common fracture specimens and structural components containing stationary and growing cracks. FRACTUS2D is under continuing development to incorporate new capabilities that address recent advances in fracture mechanics procedures, test techniques and other crack problems. Specific features of the present version of FRACTUS2D include:
+1) Numerical computation of J-Q trajectories for 2-D cracked bodies and structural components with stationary and growing cracks based on a modified bounday layer (MBL) reference solution;
+2) Numerical evaluation of eta-factors to determine the elastic-fracture parameters J and CTOD in conventional fracture mechanics specimens, including C(T), 3P and 4P SE(B)s and SE(T)s under pin-load and clamp conditions;
+3) Experimental evaluation of fracture toughness in terms of critical values of J and CTOD at cleavage instability (Jc, CTOD) and fracture resistance data described by J-R or CTOD-R curves using experimentally measured load-displacement records provided by the MTS system MTS Landmark® Testing Solutions with 250 kN of capacity.
+
+FRACTUS2D takes input commands to define the numerical (finite element) model, solution parameters, experimental toughness data and output requests in a format-free, English-like structure from a user-specified input file. This input file may include extensive user comments and is thus self-documenting. Finite element results required to compute the user-defined fracture parameters consist of displacements, reaction forces, stresses and strains in standard Patran format (binary or ASCII) MSC Patran® FEA Modeling Solution. written directly by the finite element code WARP3D.
